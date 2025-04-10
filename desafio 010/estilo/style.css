@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@font-face{
+    font-family: "Android";
+    src: url(../fontes/idroid.otf)format(opentype);
+    font-weight: normal;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+*{
+    margin: 0%;
+    padding:0%;
+}
+:root{
+    --cor1:#c5ebd6;
+    --cor2:#83e1ad;
+    --cor3:#3ddc84;
+    --cor4:#2fa866;
+    --cor5:#1a5c37;
+    --cor6:#063d1e;
+    --fontepadrao:arial,verdana,Helvetica,sans-serif;
+    --fontedestaque:"Bebas Neue",cursive;
+    --fonteandroid:"Android",cursive;}
+
+
+body{
+    background-color:var(--cor1);
+    font-family: var(--fontepadrao);
+    
+
+    }
+    
+    a.externo::after{
+        content: "\00a0🔗";
+    }
+   
+    main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        line-height: 2em;
+        font-size: 1em;
+    }
+    main strong{
+        color: var(--cor5);
+        font-weight: bold;
+        padding: 2px 6px;
+    }
+    main a{
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--cor5);
+        background-color: #3ddc84;
+        padding: 2px 6px;
+    }
+    main a:hover{
+        text-decoration-line: underline;
+        color: var(--cor6);
+    }
+  
+header {
+    background-image: linear-gradient(to bottom,var(--cor3),var(--cor5));
+font-family: var(--fontedestaque);
+text-align: center;
+
+
+
+min-width: 150px;
+font-size: 1.5;}
+
+header p{
+    
+    color: white;
+    font-family: var(--fontepadrao);
+    font-size: 1em;
+    max-width: 600px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(4, 29, 6, 0.473);
+    padding-bottom: 20px;
+
+    
+    
+    
+}
+
+ header h1 {
+    color: white;
+    font-family: var(--fontedestaque);
+    font-weight: normal;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(4, 29, 6, 0.459);
+}
+
+nav{
+        background-color: var(--cor5);
+        padding: 10px;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
+    }
+    nav a{
+        color:var(--cor4);
+        text-decoration: none;
+        padding: 10px;
+        font-weight: bolder;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+    }
+    nav a:hover {
+        background-color: var(--cor3);
+        color:var(--cor1);
+        border-radius: 5px;
+        text-shadow: none;
+        transition-duration: 1s;
+    }
+main{
+        background-color: white;
+        min-width: 260px;
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+        margin-bottom: 30px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    main img{
+        width: 100%;
+    }
+    main img.pequena{
+        max-width: 350px;
+        margin: auto;
+        display: block;
+    }
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonteandroid);
+font-weight: normal;
+font-size: 1.3em;}
+  
+main h2{
+    font-family: var(--fonteandroid);
+color: var(--cor4);
+font-size: 1.1em;
+font-weight: normal;
+background-image: linear-gradient(to right,var(--cor2), transparent);
+text-indent: 5px;}
+
+div.video{
+    background-color: var(--cor5);
+    
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video>iframe{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);
+}
+aside h3{
+    background-color: var(--cor5);
+    color: white;
+    padding: 5px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside>ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "\✔️\00a0\00a0"
+     
+     
+    
+    
+    
+}
+
+    footer{
+        background-color: var(--cor6);
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        padding: 5px;
+    }
+    footer a{
+        color: white;
+        font-weight: bolder;
+        text-decoration: none;
+        
+
+
+    }
+    footer a:hover{
+        text-decoration: underline;
+        color: var(--cor3);
+    }
